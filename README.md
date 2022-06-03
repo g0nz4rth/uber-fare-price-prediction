@@ -1,7 +1,7 @@
 fuel-consump-regression-with-api
 ==============================
 
-This is a end-to-end machine learning project where I'm creading a regression model for ships' fuel consumption with a professional model serving rest api.
+This is an end-to-end machine learning project where I'm creading a regression model for ships' fuel consumption with a professional model serving rest api.
 
 Project Organization
 ------------

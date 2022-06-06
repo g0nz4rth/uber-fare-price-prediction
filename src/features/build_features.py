@@ -94,4 +94,16 @@ def handle_travel_time(value: str):
         
     # handling wrong minutes for observations like '00:00:00'
     return handle_wrong_minutes(value)
+
+def analyze_rare_labels(data: pd.DataFrame, columns: list, ratio: float = 0.01):
+    """
+    This function calculates the % of observations
+    per category in label-based variables.
+    """
+    # calculating the% of observations per category
+    df = data.copy()
+    tmp_df = df.groupby(columns)['FUEL_CONSUMPTION'].count() / len(df)
+    
+    # returning rare categories only (default: less than 1% of observations)
+    return tmp_df[tmp_df < ratio]
         

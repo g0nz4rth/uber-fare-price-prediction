@@ -29,3 +29,16 @@ def na_impact_analysis(data: pd.DataFrame, column: str, figsize: tuple = (20, 6)
     )
     
     plt.show()
+    
+def plot_monotonic_relationship(train_set, train_target, var, target):
+    """
+    This function plots the monotonic relationship that
+    exists between each encode categorical column with
+    the target column.
+    """
+    tmp_df = pd.concat([train_set, train_target], axis=1)
+    tmp_df.groupby(var)[target].median().plot.bar()
+    plt.title(var)
+    plt.ylim(2.2, 2.6)
+    plt.ylabel(target)
+    plt.show()

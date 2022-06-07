@@ -1,6 +1,8 @@
 import re
 import time
 import datetime
+import numpy as np
+import pandas as pd
 
 def handle_wrong_minutes(travel_time: str):
     """
@@ -106,4 +108,23 @@ def analyze_rare_labels(data: pd.DataFrame, columns: list, ratio: float = 0.01):
     
     # returning rare categories only (default: less than 1% of observations)
     return tmp_df[tmp_df < ratio]
+
+def encode_categories(train_set, test_set, train_target, column, target):
+    """
+    This function encodes categorical data by ranking labels based on
+    the mean fuel consumption described by the target column.
+    """
+    # merging train predictors and targets
+    tmp_df = pd.concat([train_set, train_target], axis=1)
+    
+    # sorting categories from lowest to highest fuel consumption
+    ordered_labels = tmp_df.groupby([column])[target].mean().sort_values().index
+    
+    # creating a dictionary of ordered categories
+    ordinal_label = {key: value for value, key in enumerate(ordered_labels, 0)}
+    print(column, ordinal_label)
+    
+    # replacing categories
+    train_set[column] = train_set[column].map(ordinal_label)
+    test_set[column] = test_set[column].map(ordinal_label)
         

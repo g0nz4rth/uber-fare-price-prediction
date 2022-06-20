@@ -1,7 +1,7 @@
-fuel-consump-regression-with-api
+Product-Store Demand Forecast Research Environment
 ==============================
 
-This is an end-to-end machine learning project where I'm creading a regression model for ships' fuel consumption with a professional model serving rest api.
+This is an end-to-end machine learning project where I'm creating a demand forecasting system at a product-store level, using data from a Kaggle competition. 
 
 Project Organization
 ------------

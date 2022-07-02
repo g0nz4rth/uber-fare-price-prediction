@@ -1,4 +1,5 @@
 
+import numpy as np
 import pandas as pd
 from pycaret.regression import load_model, predict_model
 from fastapi import FastAPI
@@ -43,6 +44,7 @@ def predict(
     ]
     
     predictions = predict_model(model, data=data) 
+    predictions.Label = np.exp(predictions.Label)
     
     return {'prediction': list(predictions['Label'])}
 

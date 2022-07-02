@@ -1,7 +1,7 @@
-uber-fare-price-regression
+Uber Travels' Fare Price Prediction Modeling
 ==============================
 
-In this project I am runing an end-to-end regression modeling problem r fare prediction.
+This is an end-to-end machine learning regression problem where I built a model for predicting Uber travels' fare prices under different temporal conditions. The trained model has a production-ready REST API for inference.
 
 Project Organization
 ------------

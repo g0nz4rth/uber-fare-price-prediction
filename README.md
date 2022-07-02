@@ -19,6 +19,8 @@ Project Organization
     │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
+    ├── model_api          <- A production-ready REST API around the trained model for inference.
+    │
     ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
     │                         the creator's initials, and a short `-` delimited description, e.g.
     │                         `1.0-jqp-initial-data-exploration`.

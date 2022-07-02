@@ -77,17 +77,17 @@ qthelp:
 	@echo
 	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
 	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/fuel-consump-regression-with-api.qhcp"
+	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/uber-fare-price-regression.qhcp"
 	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/fuel-consump-regression-with-api.qhc"
+	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/uber-fare-price-regression.qhc"
 
 devhelp:
 	$(SPHINXBUILD) -b devhelp $(ALLSPHINXOPTS) $(BUILDDIR)/devhelp
 	@echo
 	@echo "Build finished."
 	@echo "To view the help file:"
-	@echo "# mkdir -p $$HOME/.local/share/devhelp/fuel-consump-regression-with-api"
-	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/fuel-consump-regression-with-api"
+	@echo "# mkdir -p $$HOME/.local/share/devhelp/uber-fare-price-regression"
+	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/uber-fare-price-regression"
 	@echo "# devhelp"
 
 epub:

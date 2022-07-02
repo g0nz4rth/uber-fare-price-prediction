@@ -1,9 +1,9 @@
-.. fuel-consump-regression-with-api documentation master file, created by
+.. uber-fare-price-regression documentation master file, created by
    sphinx-quickstart.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-fuel-consump-regression-with-api documentation!
+uber-fare-price-regression documentation!
 ==============================================
 
 Contents:

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# fuel-consump-regression-with-api documentation build configuration file, created by
+# uber-fare-price-regression documentation build configuration file, created by
 # sphinx-quickstart.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -41,7 +41,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'fuel-consump-regression-with-api'
+project = u'uber-fare-price-regression'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -164,7 +164,7 @@ html_static_path = ['_static']
 # html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'fuel-consump-regression-with-apidoc'
+htmlhelp_basename = 'uber-fare-price-regressiondoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -184,9 +184,9 @@ latex_elements = {
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
     ('index',
-     'fuel-consump-regression-with-api.tex',
-     u'fuel-consump-regression-with-api Documentation',
-     u"Arthur G", 'manual'),
+     'uber-fare-price-regression.tex',
+     u'uber-fare-price-regression Documentation',
+     u"Arthur G.", 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -215,8 +215,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'fuel-consump-regression-with-api', u'fuel-consump-regression-with-api Documentation',
-     [u"Arthur G"], 1)
+    ('index', 'uber-fare-price-regression', u'uber-fare-price-regression Documentation',
+     [u"Arthur G."], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -229,9 +229,9 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    ('index', 'fuel-consump-regression-with-api', u'fuel-consump-regression-with-api Documentation',
-     u"Arthur G", 'fuel-consump-regression-with-api',
-     'This is a end-to-end machine learning project where I'm creading a regression model for ships' fuel consumption with a professional model serving rest api.', 'Miscellaneous'),
+    ('index', 'uber-fare-price-regression', u'uber-fare-price-regression Documentation',
+     u"Arthur G.", 'uber-fare-price-regression',
+     'In this project I am runing an end-to-end regression modeling problem r fare prediction.', 'Miscellaneous'),
 ]
 
 # Documents to append as an appendix to all manuals.

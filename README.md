@@ -1,7 +1,7 @@
-Product-Store Demand Forecast Research Environment
+uber-fare-price-regression
 ==============================
 
-This is an end-to-end machine learning project where I'm creating a demand forecasting system at a product-store level, using data from a Kaggle competition. 
+In this project I am runing an end-to-end regression modeling problem r fare prediction.
 
 Project Organization
 ------------

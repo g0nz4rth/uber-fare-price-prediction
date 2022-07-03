@@ -1,7 +1,7 @@
 Uber Travels' Fare Price Prediction Modeling
 ==============================
 
-This is an end-to-end machine learning regression problem where I built a model for predicting Uber travels' fare prices under different temporal conditions. The Root Mean Squared Error of the model is about USD 0.25 cents per prediction. The trained model has a production-ready REST API for inference.
+This is an end-to-end machine learning regression problem where I built a model for predicting Uber travels' fare prices under different temporal conditions. The Root Mean Squared Error of the model is of 0.2505 per prediction (Log Transformed USD). The trained model has a production-ready REST API for inference.
 
 Project Organization
 ------------

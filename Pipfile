@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-src = {editable = true, file = "file:///home/gonzarth/GitHub/uber-fare-price-regression"}
+src = {editable = true, file = "file:///home/gonzarth/GitHub/uber-fare-price-prediction"}
 click = "*"
 sphinx = "*"
 coverage = "*"

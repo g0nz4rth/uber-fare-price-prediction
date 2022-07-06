@@ -4,30 +4,29 @@ import pandas as pd
 from pycaret.regression import *
 
 
-# loading data
-df = pd.read_csv(os.path.join('..', '..', 'data', 'interim', 'processed_uber_trip_tax_data.csv'))
-
-# target column log transformation
-df.fare_amount = np.log(df.fare_amount)
-
-# training setup
-reg_exp = setup(
-    data=df,
-    target='fare_amount',
-    train_size=0.8,
-    categorical_features=['pickup_year', 'pickup_dayofweek', 'is_holiday'],
-    numeric_features=['pickup_month', 'pickup_dayofyear', 'pickup_hour', 
-                      'passenger_count', 'pickup_latitude', 'pickup_longitude',
-                      'dropoff_latitude', 'dropoff_longitude', 'trip_distance_km'],
-    normalize=True,
-    ignore_low_variance=True,
-    silent=True,
-    html=False
-)
-
-# model creating
-model = create_model('xgboost', verbose=False)
-model = finalize_model(model)
-
-# model saving
-save_model(finalized_regressor, os.path.join('..', '..', 'models', 'xgb_regressor'))
+# objective='reg:squarederror'
+# base_score=0.5
+# booster	gbtree
+# colsample_bylevel=1
+# colsample_bynode=1
+# colsample_bytree=1
+# enable_categorical=False
+# gamma=0
+# gpu_id=0
+# importance_type=None
+# learning_rate=0.300000012
+# max_delta_step=0
+# max_depth=6
+# min_child_weight=1
+# n_estimators=100
+# n_jobs=-1
+# num_parallel_tree=1
+# predictor=auto
+# random_state=5356
+# reg_alpha=0
+# reg_lambda=1
+# scale_pos_weight=1
+# subsample=1
+# tree_method='auto'
+# validate_parameters=1
+# verbosity=0
